@@ -31,7 +31,7 @@ body{
     background-color: var(--grey-900);
     width: 20rem;
     padding: 1.25rem 1.25rem 1.75rem;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     position: relative;
 }
 
