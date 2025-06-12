@@ -1,10 +1,114 @@
+
 :root{
     --orange-500: hsl(25, 97%, 53%);
     --white: hsl(0, 100%, 100%);
     --grey-500: hsl(217, 12%, 63%);
+    --medium-grey: hsla(217, 12%, 63%, 0.073);
     --grey-900: hsl(213, 19%, 18%);
     --grey-950: hsl(216, 12%, 8%);
 }
-/*   font-family: "Overpass", sans-serif;
-    Font size (paragraph): 15px
- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Overpass", sans-serif;
+    font-size: 14px;
+    background-color: var(--grey-950);
+    color: var(--grey-500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.ratings-container{
+    background-color: var(--grey-900);
+    width: 20rem;
+    padding: 1.25rem 1.25rem 1.75rem;
+    border-radius: 1rem;
+}
+
+/* Star Icon */
+.star-container img{
+    width: 0.80rem;
+    height: 0.75rem;
+}
+
+.star-container{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--medium-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Texts */
+.rating-text h1{
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 600;
+    padding: 20px 0;
+    letter-spacing: 1px;
+}
+
+.rating-text p{
+    line-height: 1.5;
+}
+
+/* Button */
+button{
+    outline: none;
+    border: none;
+    font-weight: 700;
+}
+
+button:hover{
+    transition: all 0.3s ease-in-out;
+}
+
+.rate-buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.rating{
+    background-color: var(--medium-grey);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    color: var(--grey-500);
+}
+
+.rating.active{
+    background-color: var(--white);
+    color: var(--grey-900);
+}
+
+.rating:hover{
+    background-color: var(--orange-500);
+    color: var(--grey-900);
+    transform: scale(1.1) translateZ(10px);
+}
+
+.sumbmit-btn{
+    background-color: var(--orange-500);
+    color: var(--grey-900);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 0.8rem 0;
+    border-radius: 50px;
+    letter-spacing: 1px;
+}
+
+.sumbmit-btn:hover{
+    background-color: white;
+}
