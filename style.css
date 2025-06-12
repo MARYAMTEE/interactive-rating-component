@@ -34,6 +34,10 @@ body{
     border-radius: 1rem;
 }
 
+.success-message{
+    padding: 2rem 1.25rem
+}
+
 .hidden{
     display: none;
 }
@@ -62,6 +66,22 @@ body{
 
 .success-img{
     width: 8rem;
+}
+
+/* Success message */
+.message-container{
+    text-align: center;
+    width: fit-content;
+    height: 1.5rem;
+    background-color: var(--medium-grey);
+    padding: 0 20px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 20px 0;
+    color: var(--orange-500);
+    font-size: 14px;
 }
 
 /* Texts */
