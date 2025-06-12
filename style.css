@@ -87,6 +87,7 @@ button{
     outline: none;
     border: none;
     font-weight: 700;
+    cursor: pointer;
 }
 
 button:hover{
@@ -118,7 +119,7 @@ button:hover{
     transform: scale(1.1) translateZ(10px);
 }
 
-.sumbmit-btn{
+.submit-btn{
     background-color: var(--orange-500);
     color: var(--grey-900);
     text-transform: uppercase;
@@ -128,6 +129,6 @@ button:hover{
     letter-spacing: 1px;
 }
 
-.sumbmit-btn:hover{
+.submit-btn:hover{
     background-color: white;
 }
