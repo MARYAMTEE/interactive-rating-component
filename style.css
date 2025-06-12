@@ -33,7 +33,6 @@ body{
     padding: 1.25rem 1.25rem 1.75rem;
     border-radius: 1rem;
     position: relative;
-    transition: all 0.5s ease-in;
 }
 
 .success-message{
@@ -67,7 +66,7 @@ body{
 }
 
 .success-img{
-    width: 8rem;
+    width: 7rem;
 }
 
 /* Success message */
@@ -76,7 +75,7 @@ body{
     width: fit-content;
     height: 1.5rem;
     background-color: var(--medium-grey);
-    padding: 0 20px;
+    padding: 15px;
     display: flex;
     justify-self: center;
     align-items: center;
@@ -93,6 +92,10 @@ h1{
     font-weight: 600;
     padding: 20px 0;
     letter-spacing: 1px;
+}
+
+p{
+    line-height: 1.5;
 }
 
 .rating-text p{
@@ -163,4 +166,61 @@ button:hover{
     right: 20px;
     color: var(--white);
     cursor: pointer;
+}
+
+@media (min-width: 56.25rem){
+
+    body{
+        font-size: 15px;
+    }
+
+/* Container */
+    .ratings-container, .success-message{
+        width: 24rem;
+        padding: 1.50rem;
+    }
+
+    .success-message{
+        padding: 2rem 1.50rem;
+    }
+
+/* Text */
+    h1{
+        font-size: 1.7rem;
+        padding: 15px 0;
+    }
+
+/* Button */
+    .rating{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .rate-buttons{
+     padding: 22px 0;   
+    }
+
+
+/* Star Image */
+    .star-container{
+        margin-bottom: 20px;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .star-container img{
+        width: 1rem;
+        height: 0.95rem;
+    }
+
+/* Success message image */
+    .success-img{
+        width: 9rem;
+    }
+
+/* Success image container */
+    .message-container{
+        margin: 30px 0;
+        padding: 15px 20px;
+    }
 }
