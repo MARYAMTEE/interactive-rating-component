@@ -77,8 +77,8 @@ body{
     background-color: var(--medium-grey);
     padding: 15px;
     display: flex;
-    justify-self: center;
-    align-items: center;
+    justify-self: center !important;
+    align-items: center !important;
     border-radius: 50px;
     margin: 20px 0;
     color: var(--orange-500);

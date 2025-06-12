@@ -14,7 +14,6 @@ buttons.forEach(button => {
         button.classList.add("active");
 
         rateValue = parseInt(button.getAttribute("data-rating"));
-        console.log("button clicked!")
     });
 });
 
