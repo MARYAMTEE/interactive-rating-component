@@ -32,10 +32,12 @@ body{
     width: 20rem;
     padding: 1.25rem 1.25rem 1.75rem;
     border-radius: 1rem;
+    position: relative;
+    transition: all 0.5s ease-in;
 }
 
 .success-message{
-    padding: 2rem 1.25rem
+    padding: 2rem 1.25rem;
 }
 
 .hidden{
@@ -151,4 +153,14 @@ button:hover{
 
 .submit-btn:hover{
     background-color: white;
+}
+
+/* Cancel Icon */
+.success-message i{
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--white);
+    cursor: pointer;
 }
