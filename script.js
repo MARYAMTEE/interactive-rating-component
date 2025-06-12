@@ -3,6 +3,7 @@ const successMsg = document.querySelector(".success-msg");
 const successContainer = document.querySelector(".success-message");
 const ratingsContainer = document.querySelector(".ratings-container");
 const submitBtn = document.querySelector(".submit-btn");
+const cancelSuccess = document.querySelector(".cancel-successMsg");
 
 const maxRating = 5;
 let rateValue = null;
@@ -27,4 +28,11 @@ submitBtn.addEventListener("click", ()=> {
         successMsg.textContent = `Please select a rating`;
         successContainer.classList.remove("hidden");
     }
+cancelSuccess.addEventListener("click", ()=> {
+    successContainer.classList.add("hidden");
+
+    ratingsContainer.style.removeProperty("display");
+    rateValue = null;
+    buttons.forEach(btn => btn.classList.remove("active"));
+})
 })
