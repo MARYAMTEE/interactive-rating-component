@@ -36,6 +36,8 @@ body{
 }
 
 .success-message{
+    display: grid;
+    place-items: center;
     padding: 2rem 1.25rem;
 }
 
@@ -71,14 +73,14 @@ body{
 
 /* Success message */
 .message-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: fit-content;
     height: 1.5rem;
     background-color: var(--medium-grey);
     padding: 15px;
-    display: flex;
-    justify-self: center !important;
-    align-items: center !important;
     border-radius: 50px;
     margin: 20px 0;
     color: var(--orange-500);
